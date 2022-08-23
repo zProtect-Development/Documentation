@@ -26,6 +26,9 @@ export default defineUserConfig({
       '/': {
         sidebar: sidebarEn,
         navbar: navbarEn,
+        contributors: false,
+        lastUpdated: true,
+        lastUpdatedText: 'Last Updated',
       },
       '/zh/': {
         // navbar
@@ -37,8 +40,9 @@ export default defineUserConfig({
         sidebar: sidebarZh,
         // page meta
         editLinkText: '在 GitHub 上编辑此页',
+        lastUpdated: true,
         lastUpdatedText: '上次更新',
-        contributorsText: '贡献者',
+        contributors: false,
         // custom containers
         tip: '提示',
         warning: '注意',
