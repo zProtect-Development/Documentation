@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-17d8839a","path":"/changelog/0.1.html","title":"zProtect 0.1","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1661203612000,"contributors":[{"name":"0t4u","email":"61939142+0t4u@users.noreply.github.com","commits":1}]},"filePathRelative":"changelog/0.1.md"}');export{t as data};
