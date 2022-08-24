@@ -7,6 +7,7 @@ export const sidebarEn: SidebarConfig = {
       children: [
         '/index.md',
         '/config.md',
+        '/commandline.md',
       ],
     },
     {

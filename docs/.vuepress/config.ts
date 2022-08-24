@@ -1,6 +1,7 @@
 import { defaultTheme, defineUserConfig } from 'vuepress';
 import { searchPlugin } from '@vuepress/plugin-search';
 import { shikiPlugin } from '@vuepress/plugin-shiki';
+import markdownItFootnote from 'markdown-it-footnote';
 import { navbarEn } from './config/navbar/en';
 import { sidebarEn } from './config/sidebar/en';
 import { navbarZh } from './config/navbar/zh';
@@ -21,14 +22,18 @@ export default defineUserConfig({
     
   },
   theme: defaultTheme({
+    contributors: false,
+    docsRepo: 'https://github.com/zProtect-Development/Documentation',
+    docsBranch: 'main',
+    docsDir: 'docs',
+    editLink: true,
+    editLinkPattern: ':repo/edit/:branch/:path',
+    lastUpdated: true,
     logo: '/logo.png',
     locales: {
       '/': {
         sidebar: sidebarEn,
         navbar: navbarEn,
-        contributors: false,
-        lastUpdated: true,
-        lastUpdatedText: 'Last Updated',
       },
       '/zh/': {
         // navbar
@@ -40,9 +45,7 @@ export default defineUserConfig({
         sidebar: sidebarZh,
         // page meta
         editLinkText: '在 GitHub 上编辑此页',
-        lastUpdated: true,
         lastUpdatedText: '上次更新',
-        contributors: false,
         // custom containers
         tip: '提示',
         warning: '注意',
@@ -69,4 +72,7 @@ export default defineUserConfig({
       theme: 'dark-plus',
     }),
   ],
+  extendsMarkdown: (md) => {
+    md.use(markdownItFootnote)
+  }
 });

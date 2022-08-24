@@ -7,6 +7,7 @@ export const sidebarZh: SidebarConfig = {
       children: [
         '/zh/index.md',
         '/zh/config.md',
+        '/zh/commandline.md',
       ],
     },
   ],
