@@ -20,4 +20,8 @@ export const head: HeadConfig[] = [
     },
   ],
   ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+  ['meta', { name: 'og:title', content: 'zProtect Documentation' }],
+  ['meta', { name: 'og:type', content: 'website' }],
+  ['meta', { name: 'og:image', content: '/og.png' }],
+  ['meta', { name: 'og:url', content: 'https://docs.zprotect.dev/' }],
 ]

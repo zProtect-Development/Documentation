@@ -18,7 +18,7 @@ export default defineUserConfig({
     '/zh/': {
       lang: 'zh-CN',
       title: 'zProtect 説明書'
-    }
+    },
     
   },
   theme: defaultTheme({

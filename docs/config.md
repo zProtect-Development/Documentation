@@ -2,7 +2,7 @@
 
 ## Introduction
 
-zProtect uses the [YAML](https://en.wikipedia.org/wiki/YAML) data serialization language for configuring the behavior of the zProtect obfuscator. It is possible to hand-write the configuration file to upload on the web interface, however, you may wish to use the configurator tool in the zProtect dashboard area.
+zProtect uses the [YAML](https://en.wikipedia.org/wiki/YAML) data serialization language for configuring the behavior of the zProtect obfuscator. It is possible to hand-write the configuration file to upload on the web interface, however, you may wish to modify the [example file](#example) or generate one using the [command line tool](./commandline.md).
 
 ## Value Types
 There are a few value types used in the zProtect configuration, which are listed below.
@@ -128,7 +128,7 @@ Adds fake jumps, and such to code.
 Value type: [`simple option`](#simple-option)
 
 ## Renamers
-Renames various components of your jar's contents.
+Renames various components of your JAR's contents.
 
 ### ClassRenamer
 Renames class files.
@@ -151,78 +151,99 @@ Renames methods.
 Value type: [`simple option`](#simple-option)
 
 ## Optimization
+Modifies or removes various aspects of your jar file to make debugging harder.
 
 ### EnumOptimiser
+Removes all clone call(s) and returns an array to optimize enum values.
 
 Value type: [`simple option`](#simple-option)
 
 ### FinalRemover
+Removes finals from your code.
 
 Value type: [`simple option`](#simple-option)
 
 ### HideClassMembers
+Mark classes as synthetic to hide them from bad decompilers.
 
 Value type: [`simple option`](#simple-option)
 
 ### InsnRemover
+Removes the instructions `const_.` and `tableswitch`.
 
 Value type: [`simple option`](#simple-option)
 
 ### KotlinMetadataRemover
+Removes Kotlin-specific Metadata such as `NotNull`, `Nullable`, etc.
 
 Value type: [`simple option`](#simple-option)
 
 ### NOPInsnRemover
+Removes extended type information.
 
 Value type: [`simple option`](#simple-option)
 
 ### RemoveSignatures
+Removes the signature attribute from classes and methods.
 
 Value type: [`simple option`](#simple-option)
 
 ## Poolers
+Move values into an array to make the resulting JAR harder.
 
 ### NumberPooler
+Moves numbers into an array.
 
 Value type: [`simple option`](#simple-option)
 
 ### StringPooler
+Moves strings into an array.
 
 Value type: [`simple option`](#simple-option)
 
 ## Shrinking
+Remove various attributes to make it harder to understand the resulting JAR.
 
 ### LineNumberRemover
+Removes line numbers so StackTraces show `(Unknown)` on errors.
 
 Value type: [`simple option`](#simple-option)
 
 ### LocalVariableRemover
+Removes the local variable attribute from methods.
 
 Value type: [`simple option`](#simple-option)
 
 ### RemoveInnerClasses
+Removes various attributes such as `outerClass`, `outerMethod`, etc. from the class.
 
 Value type: [`simple option`](#simple-option)
 
 ### SourceDebugRemover
+Removes the `SourceDebug` attribute from the class.
 
 Value type: [`simple option`](#simple-option)
 
 ### SourceFileRemover
+Removes the `SourceFile` attribute from the class.
 
 Value type: [`simple option`](#simple-option)
 
 ## Shufflers
+Randomly shuffles various elements of your jar file to make it more difficult to find them.
 
 ### ShuffleFields
+Randomly shuffles elements in the mutable list of fields.
 
 Value type: [`simple option`](#simple-option)
 
 ### ShuffleMethods
+Randomly shuffles elements in the mutable list of methods.
 
 Value type: [`simple option`](#simple-option)
 
 ### ShuffleClasses
+Randomly shuffles elements in the mutable list of classes.
 
 Value type: [`simple option`](#simple-option)
 
