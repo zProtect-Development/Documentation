@@ -4,7 +4,7 @@
 zProtect is an online obfuscation platform. Our product makes your Java™ software (and by extention, languages that transpile to Java™[^1]) more difficult to reverse engineer. 
 
 ## Obfuscation Bundles
-For better efficency and lower bandwidth usage, users are required to create zProtect `bundle.zst` files using the zProtect command line tool's [bundle command](./commandline.md). You may [download](https://zprotect.dev/dashboard/cli) this tool in the zProtect dashboard.
+For better efficency and lower bandwidth usage, users are required to create zProtect `bundle.zst` files using the zProtect command line tool's [bundle command](./commandline.md). You may download this tool [here](./commandline.md#downloads).
 
 ## FAQ
 ### What is the difference between a commercial license and a non-commercial license?

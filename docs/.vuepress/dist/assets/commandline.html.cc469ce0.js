@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-d0e1d8bc","path":"/zh/commandline.html","title":"Command Line Tool","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1661350568000},"filePathRelative":"zh/commandline.md"}');export{e as data};

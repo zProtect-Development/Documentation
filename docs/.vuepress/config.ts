@@ -6,9 +6,11 @@ import { navbarEn } from './config/navbar/en';
 import { sidebarEn } from './config/sidebar/en';
 import { navbarZh } from './config/navbar/zh';
 import { sidebarZh } from './config/sidebar/zh';
+import { head } from './config/head';
 
 export default defineUserConfig({
   base: '/',
+  head,
   locales: {
     '/': {
       lang: 'en-US',

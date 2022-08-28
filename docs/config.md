@@ -67,17 +67,12 @@ key:
 ## Options
 These options specify runtime information and general configuration.
 
-### Output
-Name of the obfuscated JAR file.
-
-Value type: [`string`](#string)
-
-### Libraries
+### libraries
 Dependencies required to obfuscate your jar to prevent "Not found" errors. 
 
 Value type: [`string array`](#string-array)
 
-### Exclusions
+### exclusions
 Class files and directories that should be ignored by the obfuscator. They will not have any obfuscation applied to them.
 
 Value type: [`string array`](#string-array)
