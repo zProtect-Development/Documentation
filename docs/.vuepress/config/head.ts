@@ -19,7 +19,7 @@ export const head: HeadConfig[] = [
       href: `/favicon-32.png`,
     },
   ],
-  ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+  ['meta', { name: 'theme-color', content: '#936edb' }],
   ['meta', { name: 'og:title', content: 'zProtect Documentation' }],
   ['meta', { name: 'og:type', content: 'website' }],
   ['meta', { name: 'og:image', content: '/og.png' }],
