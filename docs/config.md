@@ -246,92 +246,88 @@ Value type: [`simple option`](#simple-option)
 Below is a fully functional example configuration file with some zProtect transformers enabled and some disabled.
 
 ```yaml
-# Blocks debugging options on terminal, may cause issues with certain programs.
-AntiDebug:
+# zProtect Configuration File Version 1
+# Reference: https://docs.zprotect.dev/config.html
+
+# May cause issues with certain programs.
+antiDebug:
   enabled: false
 
-# Manipulates instructions to crash decompilers. Currently very buggy at the moment and will likely cause problems.
 # Strongly advised not to use this.
-DecompilerCrasher:
+decompilerCrasher:
   enabled: false
 
-# Manipulates annotations to break bad decompilers.
-# This should not cause any major issues with Spigot jars.
-BadAnnotationCrasher:
+badAnnotationCrasher:
   enabled: true
 
-# Adds fake jumps, and such to code.
-Flow:
+flow:
   enabled: false
 
-# Renames various components of your jar's contents.
-# Renames class files.
-ClassRenamer:
+classRenamer:
   enabled: false
   path: ""
 
-# Renames field names.
-FieldRenamer:
+fieldRenamer:
   enabled: false
 
-# Renames local variables.
-LocalVariableRenamer:
+localVariableRenamer:
   enabled: false
 
-# Renames methods.
-MethodRenamer:
+methodRenamer:
   enabled: false
 
 # Optimization
-EnumOptimiser:
+enumOptimiser:
   enabled: false
 
-FinalRemover:
+finalRemover:
   enabled: false
 
-HideClassMembers:
+hideClassMembers:
   enabled: false
 
-InsnRemover:
+insnRemover:
   enabled: false
 
-KotlinMetadataRemover:
+kotlinMetadataRemover:
   enabled: false
 
 NOPInsnRemover:
   enabled: false
 
-RemoveSignatures:
+removeSignatures:
   enabled: false
 
 # Poolers
-NumberPooler:
+numberPooler:
   enabled: false
 
-StringPooler:
+stringPooler:
   enabled: false
 
 # Shrinking
-LineNumberRemover:
+lineNumberRemover:
   enabled: false
 
-LocalVariableRemover:
+localVariableRemover:
   enabled: false
 
-RemoveInnerClasses:
+removeInnerClasses:
   enabled: false
 
-SourceDebugRemover:
+sourceDebugRemover:
   enabled: false
 
-SourceFileRemover:
+sourceFileRemover:
   enabled: false
 
 # Shufflers
-ShuffleFields:
+shuffleFields:
   enabled: false
-ShuffleMethods:
+
+shuffleMethods:
   enabled: false
-ShuffleClasses:
+
+shuffleClasses:
   enabled: false
 ```
