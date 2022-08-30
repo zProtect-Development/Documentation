@@ -322,12 +322,9 @@ sourceFileRemover:
   enabled: false
 
 # Shufflers
-shuffleFields:
-  enabled: false
+shuffleFields: false
 
-shuffleMethods:
-  enabled: false
+shuffleMethods: false
 
-shuffleClasses:
-  enabled: false
+shuffleClasses: false
 ```
