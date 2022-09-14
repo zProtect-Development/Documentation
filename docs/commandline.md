@@ -15,9 +15,3 @@ The zProtect web interface uses a bundle.zst file to recieve data. This is creat
 |                  | 64-bit (AArch64) | [Here](https://objects.n23.io/4bcb968ea2654ee1be650d6be455725e:bucket1/zprotect-cli%2Fv0%2Fzprotect-linux-arm64)       |
 |                  | 32-bit (i386)    | [Here](https://objects.n23.io/4bcb968ea2654ee1be650d6be455725e:bucket1/zprotect-cli%2Fv0%2Fzprotect-linux-386)         |
 |                  | 32-bit (AArch32) | [Here](https://objects.n23.io/4bcb968ea2654ee1be650d6be455725e:bucket1/zprotect-cli%2Fv0%2Fzprotect-linux-arm)         |
-| FreeBSD          | 64-bit (AMD64)   | [Here](https://objects.n23.io/4bcb968ea2654ee1be650d6be455725e:bucket1/zprotect-cli%2Fv0%2Fzprotect-freebsd-amd64)     |
-|                  | 32-bit (AArch32) | [Here](https://objects.n23.io/4bcb968ea2654ee1be650d6be455725e:bucket1/zprotect-cli%2Fv0%2Fzprotect-freebsd-arm)       |
-| NetBSD           | 64-bit (AMD64)   | [Here](https://objects.n23.io/4bcb968ea2654ee1be650d6be455725e:bucket1/zprotect-cli%2Fv0%2Fzprotect-netbsd-amd64)      |
-|                  | 32-bit (AArch32) | [Here](https://objects.n23.io/4bcb968ea2654ee1be650d6be455725e:bucket1/zprotect-cli%2Fv0%2Fzprotect-netbsd-arm)        |
-| OpenBSD          | 64-bit (AMD64)   | [Here](https://objects.n23.io/4bcb968ea2654ee1be650d6be455725e:bucket1/zprotect-cli%2Fv0%2Fzprotect-openbsd-amd64)     |
-|                  | 32-bit (AArch32) | [Here](https://objects.n23.io/4bcb968ea2654ee1be650d6be455725e:bucket1/zprotect-cli%2Fv0%2Fzprotect-openbsd-arm)       |
