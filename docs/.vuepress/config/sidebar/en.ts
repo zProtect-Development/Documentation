@@ -17,5 +17,12 @@ export const sidebarEn: SidebarConfig = {
         '/changelog/0.1.md',
       ],
     },
+    {
+      text: 'Legal',
+      children: [
+        '/privacy.md',
+        '/terms.md',
+      ],
+    },
   ],
 };
